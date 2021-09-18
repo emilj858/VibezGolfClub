@@ -216,6 +216,13 @@ h1 {
           border-radius: 3px;
           margin-bottom: 8px;
         }
+        .hugs-pic {
+          background-image: url('../assets/hugs-vgc.jpg');
+          height: 450px;
+          border: 1px solid #5a5858;
+          border-radius: 3px;
+          margin-bottom: 8px;
+        }
     }
     @media only screen and (max-width: 1300px) {
       .member {
@@ -226,6 +233,11 @@ h1 {
   .motto-section {
     background-color: #f3f3f3;
 
+    .motto-header {
+      text-align: center;
+      color: black;
+      padding-top: 100px;
+    }
 
     .motto-text {
       padding: 80px;

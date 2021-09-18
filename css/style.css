@@ -192,6 +192,13 @@ h1 {
   border-radius: 3px;
   margin-bottom: 8px;
 }
+.main-wrapper .our-team-section .member .hugs-pic {
+  background-image: url("../assets/hugs-vgc.jpg");
+  height: 450px;
+  border: 1px solid #5a5858;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
 @media only screen and (max-width: 1300px) {
   .main-wrapper .our-team-section .member {
     margin-top: 50px;
@@ -199,6 +206,11 @@ h1 {
 }
 .main-wrapper .motto-section {
   background-color: #f3f3f3;
+}
+.main-wrapper .motto-section .motto-header {
+  text-align: center;
+  color: black;
+  padding-top: 100px;
 }
 .main-wrapper .motto-section .motto-text {
   padding: 80px;
