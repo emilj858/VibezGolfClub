@@ -3,7 +3,7 @@ html {
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  background: #000000;
+  background: #333333;
   display: flex;
   justify-content: center;
   font-family: "Helvetica", "Nunito", sans-serif;
@@ -27,7 +27,7 @@ h1 {
 .main-wrapper .social-tag-wrapper i {
   margin-top: 20px;
   margin-left: 50px;
-  color: white;
+  color: #FFFFF0;
   font-size: 40px;
 }
 .main-wrapper .main-logo {
@@ -53,14 +53,19 @@ h1 {
   color: #ffffff;
   font-size: 100px;
   margin-left: 25%;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 1px 1px #333333;
   top: 0;
   margin-top: 30%;
+}
+@media only screen and (max-width: 1500px) {
+  .main-wrapper .overlay-text {
+    margin-left: 18%;
+  }
 }
 @media only screen and (max-width: 1300px) {
   .main-wrapper .overlay-text {
     font-size: 42px;
-    margin-left: 31%;
+    margin-left: 36%;
   }
 }
 .main-wrapper .main-photo {
@@ -113,23 +118,23 @@ h1 {
   justify-content: center;
 }
 .main-wrapper .our-team-section .member {
-  width: 500px;
+  width: 400px;
   text-align: center;
   border: black;
   border-radius: 8px;
   border: 1px solid white;
   margin: 8px;
-  padding: 30px;
+  padding: 25px;
 }
 .main-wrapper .our-team-section .member .name {
   font-size: 24px;
-  color: white;
+  color: #FFFFF0;
   padding-bottom: 8px;
 }
 .main-wrapper .our-team-section .member .sub-info {
   text-align: left;
   font-size: 18px;
-  color: white;
+  color: #FFFFF0;
 }
 .main-wrapper .our-team-section .member .bio {
   color: #ffffff;
@@ -213,9 +218,19 @@ h1 {
   padding-top: 100px;
 }
 .main-wrapper .motto-section .motto-text {
-  padding: 80px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
   font-size: 18px;
   color: black;
+}
+.main-wrapper .motto-section .vg-black-small {
+  background-image: url("../assets/VGC_BLACK_small.png");
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  background-repeat: no-repeat;
 }
 .main-wrapper .team-photo-section {
   height: 700px;
@@ -224,6 +239,31 @@ h1 {
 }
 .main-wrapper .team-photo-section .photo {
   background-image: url("../assets/group-photo.png");
+}
+.main-wrapper .footer {
+  height: 140px;
+  background-color: #ffffff;
+  display: flex;
+}
+.main-wrapper .footer .footer-wrapper {
+  color: #333333;
+  margin: auto;
+}
+.main-wrapper .footer .footer-wrapper .social-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+}
+.main-wrapper .footer .footer-wrapper .social-wrapper .fa-instagram {
+  font-size: 40px;
+  color: #333333;
+}
+.main-wrapper .footer .footer-wrapper .social-wrapper .fa-twitter {
+  font-size: 40px;
+  color: #333333;
+}
+.main-wrapper .footer .footer-wrapper .vibez-text {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
