@@ -118,7 +118,7 @@ h1 {
 
   .team-header {
       text-align: center;
-      color: white;
+      color: #FFFFF0;
       padding-bottom: 40px;
       padding-top: 100px;
       // font-style: italic;
@@ -129,105 +129,126 @@ h1 {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      padding-left: 30px;
-      padding-right: 30px;
       padding-bottom: 50px;
       justify-content: center;
     .member {
         width: 400px;
         text-align: center;
-        border: black;
+        border: rgb(255, 255, 255);
         border-radius: 8px;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgb(0, 0, 0);
         margin: 8px;
         padding: 25px;
-
+        //
+        background-color: #FFFFF0;
 
         .name {
             font-size: 24px;
-            color: #FFFFF0;
-            padding-bottom: 8px;
+            // color: #FFFFF0;
+            color: #333333;
+            padding-bottom: 16px;
+            font-weight: 700;
         }
         .sub-info {
           text-align: left;
           font-size: 18px;
-          color: #FFFFF0;
+          // color: #FFFFF0;
+          color: #333333;
       }
         .bio {
-          color: #ffffff;
+          // color: #ffffff;
+          color: #333333;
           text-align: left;
           padding-top: 8px;
         }
 
         .noe-pic {
-          background-image: url('../assets/Noe-Vital-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Noe-Vital-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .melvin-pic {
-          background-image: url('../assets/Melvin-Gordon-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Melvin-Gordon-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .tanner-pic {
-          background-image: url('../assets/Tanner-McEvoy-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Tanner-McEvoy-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .darius-pic {
-          background-image: url('../assets/Darius-Hillary-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Darius-Hillary-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .robert-pic {
-          background-image: url('../assets/Rob-Wheelright-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Rob-Wheelright-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .dare-pic {
-          background-image: url('../assets/Dare-Ogunbowale-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Dare-Ogunbowale-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .austin-pic {
-          background-image: url('../assets/Austin-Traylor-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Austin-Traylor-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
 
         .kenzel-pic {
-          background-image: url('../assets/Kenzel-Doe-VGC.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Kenzel-Doe-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
         .hugs-pic {
-          background-image: url('../assets/hugs-vgc.jpg');
-          height: 450px;
+          background-image: url('../assets/members/Hugs-Etienne-VGC-400.jpg');
+          height: 400px;
+          width: 400px;
           border: 1px solid #5a5858;
           border-radius: 3px;
           margin-bottom: 8px;
+          background-repeat: no-repeat;
         }
     }
     @media only screen and (max-width: 1300px) {
@@ -237,12 +258,13 @@ h1 {
     }
   }
   .motto-section {
-    background-color: #f3f3f3;
+    background-color: #FFFFF0;
 
     .motto-header {
       text-align: center;
       color: black;
-      padding-top: 100px;
+      padding-top: 30px;
+      font-size: 60px;
     }
 
     .motto-text {
@@ -250,7 +272,8 @@ h1 {
       padding-left: 80px;
       padding-right: 80px;
       padding-bottom: 20px;
-      font-size: 18px;
+      font-size: 24px;
+      text-align: center;
       color: black;
     }
     .vg-black-small {
@@ -272,15 +295,21 @@ h1 {
   }
   .footer {
     height: 140px;
-    background-color: #ffffff;
+    background-color: #fffff0;
     display: flex;
     .footer-wrapper {
       color: #333333;
       margin: auto;
+      display: flex;
+      flex-direction: row;
       .social-wrapper {
         display: flex;
         flex-direction: row;
+        margin-top: -16px;
         margin-left: 60px;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
         .fa-instagram {
           font-size: 40px;
           color: #333333;
@@ -288,6 +317,7 @@ h1 {
         .fa-twitter {
           font-size: 40px;
           color: #333333;
+          padding-left: 16px;
         }
         // .fa-tiktok {
         //   font-size: 40px;
@@ -296,6 +326,10 @@ h1 {
       }
       .vibez-text {
         font-size: 24px;
+        margin-top: -6px;
+        position: absolute;
+        left: 0;
+        margin-left: 20px;
       }
     }
   }
