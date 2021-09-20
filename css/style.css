@@ -104,7 +104,7 @@ h1 {
 }
 .main-wrapper .team-header {
   text-align: center;
-  color: white;
+  color: #FFFFF0;
   padding-bottom: 40px;
   padding-top: 100px;
 }
@@ -112,97 +112,115 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 50px;
   justify-content: center;
 }
 .main-wrapper .our-team-section .member {
   width: 400px;
   text-align: center;
-  border: black;
+  border: white;
   border-radius: 8px;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 8px;
   padding: 25px;
+  background-color: #FFFFF0;
 }
 .main-wrapper .our-team-section .member .name {
   font-size: 24px;
-  color: #FFFFF0;
-  padding-bottom: 8px;
+  color: #333333;
+  padding-bottom: 16px;
+  font-weight: 700;
 }
 .main-wrapper .our-team-section .member .sub-info {
   text-align: left;
   font-size: 18px;
-  color: #FFFFF0;
+  color: #333333;
 }
 .main-wrapper .our-team-section .member .bio {
-  color: #ffffff;
+  color: #333333;
   text-align: left;
   padding-top: 8px;
 }
 .main-wrapper .our-team-section .member .noe-pic {
-  background-image: url("../assets/Noe-Vital-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Noe-Vital-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .melvin-pic {
-  background-image: url("../assets/Melvin-Gordon-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Melvin-Gordon-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .tanner-pic {
-  background-image: url("../assets/Tanner-McEvoy-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Tanner-McEvoy-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .darius-pic {
-  background-image: url("../assets/Darius-Hillary-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Darius-Hillary-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .robert-pic {
-  background-image: url("../assets/Rob-Wheelright-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Rob-Wheelright-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .dare-pic {
-  background-image: url("../assets/Dare-Ogunbowale-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Dare-Ogunbowale-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .austin-pic {
-  background-image: url("../assets/Austin-Traylor-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Austin-Traylor-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .kenzel-pic {
-  background-image: url("../assets/Kenzel-Doe-VGC.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Kenzel-Doe-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 .main-wrapper .our-team-section .member .hugs-pic {
-  background-image: url("../assets/hugs-vgc.jpg");
-  height: 450px;
+  background-image: url("../assets/members/Hugs-Etienne-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
   border: 1px solid #5a5858;
   border-radius: 3px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 @media only screen and (max-width: 1300px) {
   .main-wrapper .our-team-section .member {
@@ -210,19 +228,21 @@ h1 {
   }
 }
 .main-wrapper .motto-section {
-  background-color: #f3f3f3;
+  background-color: #FFFFF0;
 }
 .main-wrapper .motto-section .motto-header {
   text-align: center;
   color: black;
-  padding-top: 100px;
+  padding-top: 30px;
+  font-size: 60px;
 }
 .main-wrapper .motto-section .motto-text {
   padding-top: 80px;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 24px;
+  text-align: center;
   color: black;
 }
 .main-wrapper .motto-section .vg-black-small {
@@ -242,17 +262,23 @@ h1 {
 }
 .main-wrapper .footer {
   height: 140px;
-  background-color: #ffffff;
+  background-color: #fffff0;
   display: flex;
 }
 .main-wrapper .footer .footer-wrapper {
   color: #333333;
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 .main-wrapper .footer .footer-wrapper .social-wrapper {
   display: flex;
   flex-direction: row;
+  margin-top: -16px;
   margin-left: 60px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 .main-wrapper .footer .footer-wrapper .social-wrapper .fa-instagram {
   font-size: 40px;
@@ -261,9 +287,14 @@ h1 {
 .main-wrapper .footer .footer-wrapper .social-wrapper .fa-twitter {
   font-size: 40px;
   color: #333333;
+  padding-left: 16px;
 }
 .main-wrapper .footer .footer-wrapper .vibez-text {
   font-size: 24px;
+  margin-top: -6px;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
