@@ -218,6 +218,50 @@ h1 {
     margin-top: 50px;
   }
 }
+.main-wrapper .event-section {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-wrapper .event-section .text {
+  font-size: 24px;
+  width: 500px;
+  margin-right: 100px;
+  color: white;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  .main-wrapper .event-section .text {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main-wrapper .event-section .text {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.main-wrapper .event-section .text .register-button {
+  padding-top: 10px;
+}
+.main-wrapper .event-section .text .register-button button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.main-wrapper .event-section .flyer {
+  width: 500px;
+  height: 500px;
+  background-image: url("../assets/vibez-go-crazy.jpg");
+}
 .main-wrapper .motto-section {
   background-color: #FFFFF0;
 }
