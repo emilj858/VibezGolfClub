@@ -302,10 +302,16 @@ h1 {
   background-image: url("../assets/group-photo.png");
 }
 .main-wrapper .footer {
-  height: 140px;
+  height: 200px;
   background-color: #fffff0;
-  display: flex;
 }
+
+.main-wrapper .footer .footer-contact {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
 .main-wrapper .footer .footer-wrapper {
   color: #333333;
   margin: auto;
