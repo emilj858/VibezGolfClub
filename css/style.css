@@ -10,12 +10,59 @@ html {
   /* align-items: center; */
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   color: #4E3822;
   font-family: "Helvetica", "Nunito", sans-serif;
   padding: 0;
   margin: 0;
 }
+
+
+/* (A) NAVIGATION BAR */
+.ddmenu { display: flex; }
+ 
+/* (B) FIRST LEVEL ITEMS */
+.ddmenu a, .ddmenu .ddgroup {
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: #585858;
+}
+.ddmenu a:hover, .ddmenu .ddgroup:hover {
+  /* color: #ffe945; */
+  background: #3a3a3a;
+  cursor: pointer;
+}
+
+.ddmenu .ddgroup { position: relative; }
+.ddsub {
+  width: 100%;
+  position: absolute;
+  top: 100%; left: 0;
+  display: none;
+}
+.ddsub a { 
+  display: block; 
+  box-sizing: border-box;
+}
+.ddgroup:hover .ddsub { display: block; }
+
+.ddgroup {
+  position: fixed!important;
+    top: 0;
+    right: 0;
+    width: 100px!important;
+    text-align: center;
+}
+
+
+
+
 
 .main-wrapper {
   display: block;
