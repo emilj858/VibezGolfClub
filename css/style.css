@@ -33,7 +33,7 @@ h1 {
   text-decoration: none;
   background: #585858;
 }
-.ddmenu a:hover, .ddmenu .ddgroup:hover {
+.ddmenu a:hover, .ddmenu .ddgroup:hover, .ddgroup:active {
   /* color: #ffe945; */
   background: #3a3a3a;
   cursor: pointer;
@@ -46,6 +46,14 @@ h1 {
   top: 100%; left: 0;
   display: none;
 }
+
+@media only screen and (max-width: 800px) {
+  .ddsub {
+    display: block;
+  }
+}
+
+
 .ddsub a { 
   display: block; 
   box-sizing: border-box;
