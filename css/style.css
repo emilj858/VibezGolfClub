@@ -47,7 +47,7 @@ h1 {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .ddsub {
     display: block;
   }
