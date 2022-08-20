@@ -21,10 +21,11 @@ h1 {
   margin: 0;
 }
 
-
 /* (A) NAVIGATION BAR */
-.ddmenu { display: flex; }
- 
+.ddmenu {
+  display: flex;
+}
+
 /* (B) FIRST LEVEL ITEMS */
 .ddmenu a, .ddmenu .ddgroup {
   width: 100%;
@@ -33,17 +34,22 @@ h1 {
   text-decoration: none;
   background: #585858;
 }
+
 .ddmenu a:hover, .ddmenu .ddgroup:hover, .ddgroup:active {
   /* color: #ffe945; */
   background: #3a3a3a;
   cursor: pointer;
 }
 
-.ddmenu .ddgroup { position: relative; }
+.ddmenu .ddgroup {
+  position: relative;
+}
+
 .ddsub {
   width: 100%;
   position: absolute;
-  top: 100%; left: 0;
+  top: 100%;
+  left: 0;
   display: none;
 }
 
@@ -52,39 +58,39 @@ h1 {
     display: block;
   }
 }
-
-
-.ddsub a { 
-  display: block; 
+.ddsub a {
+  display: block;
   box-sizing: border-box;
 }
-.ddgroup:hover .ddsub { display: block; }
 
-.ddgroup {
-  position: fixed!important;
-    top: 0;
-    right: 0;
-    width: 100px!important;
-    text-align: center;
+.ddgroup:hover .ddsub {
+  display: block;
 }
 
-
-
-
+.ddgroup {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  width: 100px !important;
+  text-align: center;
+}
 
 .main-wrapper {
   display: block;
 }
+
 .main-wrapper .social-tag-wrapper {
   position: absolute;
   top: 0;
 }
+
 .main-wrapper .social-tag-wrapper i {
   margin-top: 20px;
   margin-left: 50px;
   color: #FFFFF0;
   font-size: 40px;
 }
+
 .main-wrapper .main-logo {
   background-image: url("../assets/VGC_FULL_WHITE_small_copy_50.png");
   height: 216px;
@@ -92,6 +98,7 @@ h1 {
   margin-top: 100px;
   margin: auto;
 }
+
 .main-wrapper .small-logo {
   background-image: url("../assets/VGC_FULL_WHITE_small.png");
   height: 90px;
@@ -103,6 +110,7 @@ h1 {
   top: 0;
   margin-top: 10px;
 }
+
 .main-wrapper .overlay-text {
   position: absolute;
   color: #ffffff;
@@ -112,6 +120,7 @@ h1 {
   top: 0;
   margin-top: 30%;
 }
+
 @media only screen and (max-width: 1500px) {
   .main-wrapper .overlay-text {
     margin-left: 18%;
@@ -124,16 +133,17 @@ h1 {
   }
 }
 .main-wrapper .main-photo {
-  background-image: url("../assets/vgc-group-1800x1350.jpg");
+  background-image: url("../assets/vgc-team-1800x1350.jpg");
   height: 1300px;
   width: 100%;
   background-repeat: no-repeat;
   margin: auto;
   background-size: cover;
 }
+
 @media only screen and (max-width: 1500px) {
   .main-wrapper .main-photo {
-    background-image: url("../assets/vgc-group-1280x960.jpg");
+    background-image: url("../assets/vgc-team-1280x960.jpg");
     height: 960px;
     width: 100%;
     background-repeat: no-repeat;
@@ -143,7 +153,7 @@ h1 {
 }
 @media only screen and (max-width: 1300px) {
   .main-wrapper .main-photo {
-    background-image: url("../assets/vgc-group-820x615.jpg");
+    background-image: url("../assets/vgc-team-820x615.jpg");
     background-repeat: no-repeat;
     height: 640px;
     width: 100%;
@@ -151,7 +161,7 @@ h1 {
 }
 @media only screen and (max-width: 800px) {
   .main-wrapper .main-photo {
-    background-image: url("../assets/vgc-group-640x480.jpg");
+    background-image: url("../assets/vgc-team-640x480.jpg");
     background-repeat: no-repeat;
     height: 640px;
     width: 100%;
@@ -163,6 +173,7 @@ h1 {
   padding-bottom: 40px;
   padding-top: 100px;
 }
+
 .main-wrapper .our-team-section {
   display: flex;
   flex-wrap: wrap;
@@ -170,6 +181,7 @@ h1 {
   padding-bottom: 50px;
   justify-content: center;
 }
+
 .main-wrapper .our-team-section .member {
   width: 400px;
   text-align: center;
@@ -180,30 +192,35 @@ h1 {
   padding: 25px;
   background-color: #FFFFF0;
 }
+
 .main-wrapper .our-team-section .member .name {
   font-size: 24px;
   color: #333333;
   padding-bottom: 16px;
   font-weight: 700;
 }
+
 .main-wrapper .our-team-section .member .sub-info {
   text-align: left;
   font-size: 18px;
   color: #333333;
 }
+
 .main-wrapper .our-team-section .member .bio {
   color: #333333;
   text-align: left;
   padding-top: 8px;
 }
+
 .main-wrapper .our-team-section .member .noe-pic {
-  background-image: url("../assets/members/Noe-Vital-VGC-400.jpg");
+  background-image: url("../assets/members/nv-update-web.jpg");
   height: 400px;
   width: 400px;
   border-radius: 3px;
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .melvin-pic {
   background-image: url("../assets/members/Melvin-Gordon-VGC-400.jpg");
   height: 400px;
@@ -212,14 +229,16 @@ h1 {
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .tanner-pic {
-  background-image: url("../assets/members/Tanner-McEvoy-VGC-400.jpg");
+  background-image: url("../assets/members/tm-update-web.jpg");
   height: 400px;
   width: 400px;
   border-radius: 3px;
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .darius-pic {
   background-image: url("../assets/members/Darius-Hillary-VGC-400.jpg");
   height: 400px;
@@ -228,22 +247,25 @@ h1 {
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .robert-pic {
-  background-image: url("../assets/members/Rob-Wheelright-VGC-400.jpg");
+  background-image: url("../assets/members/rw-update-web.jpg");
   height: 400px;
   width: 400px;
   border-radius: 3px;
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .dare-pic {
-  background-image: url("../assets/members/Dare-Ogunbowale-VGC-400.jpg");
+  background-image: url("../assets/members/do-update-web.jpg");
   height: 400px;
   width: 400px;
   border-radius: 3px;
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .austin-pic {
   background-image: url("../assets/members/Austin-Traylor-VGC-400.jpg");
   height: 400px;
@@ -252,22 +274,34 @@ h1 {
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .kenzel-pic {
-  background-image: url("../assets/members/Kenzel-Doe-VGC-400.jpg");
+  background-image: url("../assets/members/kd-update-web.jpg");
   height: 400px;
   width: 400px;
   border-radius: 3px;
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .our-team-section .member .hugs-pic {
-  background-image: url("../assets/members/Hugs-Etienne-VGC-400.jpg");
+  background-image: url("../assets/members/he-update-web.jpg");
   height: 400px;
   width: 400px;
   border-radius: 3px;
   margin-bottom: 8px;
   background-repeat: no-repeat;
 }
+
+.main-wrapper .our-team-section .member .darius-feaster-pic {
+  background-image: url("../assets/members/df-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 1300px) {
   .main-wrapper .our-team-section .member {
     margin-top: 50px;
@@ -282,6 +316,7 @@ h1 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .main-wrapper .event-section .text {
   font-size: 24px;
   width: 500px;
@@ -289,6 +324,7 @@ h1 {
   color: white;
   text-align: center;
 }
+
 @media only screen and (max-width: 1100px) {
   .main-wrapper .event-section .text {
     margin-right: 0px;
@@ -304,6 +340,7 @@ h1 {
 .main-wrapper .event-section .text .register-button {
   padding-top: 10px;
 }
+
 .main-wrapper .event-section .text .register-button button {
   width: 150px;
   height: 50px;
@@ -312,6 +349,7 @@ h1 {
   margin-top: 20px;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 1100px) {
   .main-wrapper .event-section .text .register-button button {
     margin-bottom: 40px;
@@ -323,15 +361,18 @@ h1 {
   height: 500px;
   background-image: url("../assets/2022-VibezGoCrazy-Design-v4-Sponsors_500x500.jpg");
 }
+
 .main-wrapper .motto-section {
   background-color: #FFFFF0;
 }
+
 .main-wrapper .motto-section .motto-header {
   text-align: center;
   color: black;
   padding-top: 30px;
   font-size: 60px;
 }
+
 .main-wrapper .motto-section .motto-text {
   padding-top: 30px;
   padding-left: 80px;
@@ -341,6 +382,7 @@ h1 {
   text-align: center;
   color: black;
 }
+
 .main-wrapper .motto-section .vg-black-small {
   background-image: url("../assets/VGC_BLACK_small.png");
   width: 300px;
@@ -348,14 +390,17 @@ h1 {
   margin: auto;
   background-repeat: no-repeat;
 }
+
 .main-wrapper .team-photo-section {
   height: 700px;
   background-repeat: no-repeat;
   margin: auto;
 }
+
 .main-wrapper .team-photo-section .photo {
   background-image: url("../assets/group-photo.png");
 }
+
 .main-wrapper .footer {
   height: 200px;
   background-color: #fffff0;
@@ -373,6 +418,7 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+
 .main-wrapper .footer .footer-wrapper .social-wrapper {
   display: flex;
   flex-direction: row;
@@ -382,15 +428,18 @@ h1 {
   right: 0;
   margin-right: 20px;
 }
+
 .main-wrapper .footer .footer-wrapper .social-wrapper .fa-instagram {
   font-size: 40px;
   color: #333333;
 }
+
 .main-wrapper .footer .footer-wrapper .social-wrapper .fa-twitter {
   font-size: 40px;
   color: #333333;
   padding-left: 16px;
 }
+
 .main-wrapper .footer .footer-wrapper .vibez-text {
   font-size: 24px;
   margin-top: -6px;
@@ -398,5 +447,7 @@ h1 {
   left: 0;
   margin-left: 20px;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
