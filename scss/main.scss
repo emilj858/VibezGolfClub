@@ -1,94 +1,139 @@
 html {
-    width: 100%;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    background: #333333;
-    display: flex;
-    justify-content: center;
-    font-family: 'Helvetica', 'Nunito', sans-serif;
-    /* align-items: center; */
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  font-family: "Helvetica", "Nunito", sans-serif;
+  /* align-items: center; */
+}
+
+body {
+  margin: 0;
 }
 
 h1 {
-    color: #4E3822;
-    font-family: 'Helvetica', 'Nunito', sans-serif;
-    padding: 0;
-    margin: 0;
+  color: #4E3822;
+  font-family: "Helvetica", "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
 }
+
+
+/* (A) NAVIGATION BAR */
+.ddmenu { display: flex; }
+ 
+/* (B) FIRST LEVEL ITEMS */
+.ddmenu a, .ddmenu .ddgroup {
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: #585858;
+}
+.ddmenu a:hover, .ddmenu .ddgroup:hover, .ddgroup:active {
+  /* color: #ffe945; */
+  background: #3a3a3a;
+  cursor: pointer;
+}
+
+.ddmenu .ddgroup { position: relative; }
+.ddsub {
+  width: 100%;
+  position: absolute;
+  top: 100%; left: 0;
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ddsub {
+    display: block;
+  }
+}
+
+
+.ddsub a { 
+  display: block; 
+  box-sizing: border-box;
+}
+.ddgroup:hover .ddsub { display: block; }
+
+.ddgroup {
+  position: fixed!important;
+    top: 0;
+    right: 0;
+    width: 100px!important;
+    text-align: center;
+}
+
+
+
+
 
 .main-wrapper {
   display: block;
-
-  .social-tag-wrapper {
-    position: absolute;
-    top: 0;
-    i {
-        margin-top: 20px;
-        margin-left: 50px;
-        color: #FFFFF0;
-        font-size: 40px;
-    }
+}
+.main-wrapper .social-tag-wrapper {
+  position: absolute;
+  top: 0;
+}
+.main-wrapper .social-tag-wrapper i {
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #FFFFF0;
+  font-size: 40px;
+}
+.main-wrapper .main-logo {
+  background-image: url("../assets/VGC_FULL_WHITE_small_copy_50.png");
+  height: 216px;
+  width: 350px;
+  margin-top: 100px;
+  margin: auto;
+}
+.main-wrapper .small-logo {
+  background-image: url("../assets/VGC_FULL_WHITE_small.png");
+  height: 90px;
+  width: 140px;
+  margin: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: 47%;
+  top: 0;
+  margin-top: 10px;
+}
+.main-wrapper .overlay-text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 100px;
+  margin-left: 25%;
+  text-shadow: 1px 1px #333333;
+  top: 0;
+  margin-top: 30%;
+}
+@media only screen and (max-width: 1500px) {
+  .main-wrapper .overlay-text {
+    margin-left: 18%;
   }
-  
-  .main-logo {
-    background-image: url('../assets/VGC_FULL_WHITE_small_copy_50.png');
-    height: 216px;
-    width: 350px;;
-    margin-top: 100px;
-    margin: auto;
+}
+@media only screen and (max-width: 1300px) {
+  .main-wrapper .overlay-text {
+    font-size: 42px;
+    margin-left: 36%;
   }
-
-  .small-logo {
-    background-image: url('../assets/VGC_FULL_WHITE_small.png');
-    height: 90px;
-    width: 140px;
-    margin: auto;
-    background-repeat: no-repeat;
-    position: absolute;
-    margin-left: 47%;
-    top: 0;
-    margin-top: 10px;
-  }
-
-  .overlay-text {
-    position: absolute;
-    color: #ffffff;
-    font-size: 100px;
-    margin-left: 25%;
-    text-shadow: 1px 1px #333333;
-    top: 0;
-    margin-top: 30%;
-  }
-  
-  @media only screen and (max-width: 1500px) {
-    .overlay-text {
-      margin-left: 18%;
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .overlay-text {
-      font-size: 42px;
-      margin-left: 36%;
-    }
-  }
-
-
-
-  .main-photo {
-    background-image: url('../assets/vgc-group-1800x1350.jpg');
-    height: 1300px;
-    width: 100%;
-    background-repeat: no-repeat;
-    // margin-top: 100px;
-    margin: auto;
-    background-size: cover;
-  }
-
-  @media only screen and (max-width: 1500px) {
-  .main-photo {
-    background-image: url('../assets/vgc-group-1280x960.jpg');
+}
+.main-wrapper .main-photo {
+  background-image: url("../assets/vgc-team-1800x1350.jpg");
+  height: 1300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: cover;
+}
+@media only screen and (max-width: 1500px) {
+  .main-wrapper .main-photo {
+    background-image: url("../assets/vgc-team-1280x960.jpg");
     height: 960px;
     width: 100%;
     background-repeat: no-repeat;
@@ -96,280 +141,270 @@ h1 {
     background-size: cover;
   }
 }
-
 @media only screen and (max-width: 1300px) {
-  .main-photo {
-    background-image: url('../assets/vgc-group-820x615.jpg');
+  .main-wrapper .main-photo {
+    background-image: url("../assets/vgc-team-820x615.jpg");
     background-repeat: no-repeat;
     height: 640px;
     width: 100%;
   }
 }
-
-  @media only screen and (max-width: 800px) {
-    .main-photo {
-      background-image: url('../assets/vgc-group-640x480.jpg');
-      background-repeat: no-repeat;
-      height: 640px;
-      width: 100%;
-    }
-  }
-  
-
-  .team-header {
-      text-align: center;
-      color: #FFFFF0;
-      padding-bottom: 40px;
-      padding-top: 100px;
-      // font-style: italic;
-      // text-decoration: underline;
-  }
-
-  .our-team-section {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      padding-bottom: 50px;
-      justify-content: center;
-    .member {
-        width: 400px;
-        text-align: center;
-        border: rgb(255, 255, 255);
-        border-radius: 8px;
-        border: 1px solid rgb(0, 0, 0);
-        margin: 8px;
-        padding: 25px;
-        //
-        background-color: #FFFFF0;
-
-        .name {
-            font-size: 24px;
-            // color: #FFFFF0;
-            color: #333333;
-            padding-bottom: 16px;
-            font-weight: 700;
-        }
-        .sub-info {
-          text-align: left;
-          font-size: 18px;
-          // color: #FFFFF0;
-          color: #333333;
-      }
-        .bio {
-          // color: #ffffff;
-          color: #333333;
-          text-align: left;
-          padding-top: 8px;
-        }
-
-        .noe-pic {
-          background-image: url('../assets/members/Noe-Vital-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .melvin-pic {
-          background-image: url('../assets/members/Melvin-Gordon-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .tanner-pic {
-          background-image: url('../assets/members/Tanner-McEvoy-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .darius-pic {
-          background-image: url('../assets/members/Darius-Hillary-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .robert-pic {
-          background-image: url('../assets/members/Rob-Wheelright-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .dare-pic {
-          background-image: url('../assets/members/Dare-Ogunbowale-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .austin-pic {
-          background-image: url('../assets/members/Austin-Traylor-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-
-        .kenzel-pic {
-          background-image: url('../assets/members/Kenzel-Doe-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-        .hugs-pic {
-          background-image: url('../assets/members/Hugs-Etienne-VGC-400.jpg');
-          height: 400px;
-          width: 400px;
-          border-radius: 3px;
-          margin-bottom: 8px;
-          background-repeat: no-repeat;
-        }
-    }
-    @media only screen and (max-width: 1300px) {
-      .member {
-        margin-top: 50px;
-      }
-    }
-  }
-  .event-section {
-    background-color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    
-    .text {
-      font-size: 24px;
-      width: 500px;
-      margin-right: 100px;
-      color: white;
-      text-align: center;
-      @media only screen and (max-width: 1100px) {
-        margin-right: 0px;
-      }
-      @media only screen and (max-width: 800px) {
-        padding: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      .register-button {
-        padding-top: 10px;
-        button {
-          width: 150px;
-          height: 50px;
-          font-size: 18px;
-          font-weight: bold;
-          margin-top: 20px;
-          cursor: pointer;
-          @media only screen and (max-width: 1100px) {
-            margin-bottom: 40px;
-            width: 180px;
-          }
-        }
-      }
-    }
-    .flyer {
-      width: 500px;
-      height: 500px;
-      background-image: url('../assets/2022-VibezGoCrazy-Design-v4-Sponsors_500x500.jpg');
-    }
-  }
-  .motto-section {
-    background-color: #FFFFF0;
-
-    .motto-header {
-      text-align: center;
-      color: black;
-      padding-top: 30px;
-      font-size: 60px;
-    }
-
-    .motto-text {
-      padding-top: 30px;
-      padding-left: 80px;
-      padding-right: 80px;
-      padding-bottom: 20px;
-      font-size: 24px;
-      text-align: center;
-      color: black;
-    }
-    .vg-black-small {
-      background-image: url('../assets/VGC_BLACK_small.png');
-      width: 300px;
-      height: 200px;
-      margin: auto;
-      background-repeat: no-repeat;
-    }
-  }
-  .team-photo-section {
-    height: 700px;
-
+@media only screen and (max-width: 800px) {
+  .main-wrapper .main-photo {
+    background-image: url("../assets/vgc-team-640x480.jpg");
     background-repeat: no-repeat;
-    margin: auto;
-    .photo {
-      background-image: url('../assets/group-photo.png');
-    }
-  }
-  .footer {
-    height: 140px;
-    background-color: #fffff0;
-    display: flex;
-    .footer-wrapper {
-      color: #333333;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      .social-wrapper {
-        display: flex;
-        flex-direction: row;
-        margin-top: -16px;
-        margin-left: 60px;
-        position: absolute;
-        right: 0;
-        margin-right: 20px;
-        .fa-instagram {
-          font-size: 40px;
-          color: #333333;
-        }
-        .fa-twitter {
-          font-size: 40px;
-          color: #333333;
-          padding-left: 16px;
-        }
-        // .fa-tiktok {
-        //   font-size: 40px;
-        //   color: #333333;
-        // }
-      }
-      .vibez-text {
-        font-size: 24px;
-        margin-top: -6px;
-        position: absolute;
-        left: 0;
-        margin-left: 20px;
-      }
-    }
+    height: 640px;
+    width: 100%;
   }
 }
+.main-wrapper .team-header {
+  text-align: center;
+  color: #FFFFF0;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+.main-wrapper .our-team-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.main-wrapper .our-team-section .member {
+  width: 400px;
+  text-align: center;
+  border: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin: 8px;
+  padding: 25px;
+  background-color: #FFFFF0;
+}
+.main-wrapper .our-team-section .member .name {
+  font-size: 24px;
+  color: #333333;
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+.main-wrapper .our-team-section .member .sub-info {
+  text-align: left;
+  font-size: 18px;
+  color: #333333;
+}
+.main-wrapper .our-team-section .member .bio {
+  color: #333333;
+  text-align: left;
+  padding-top: 8px;
+}
+.main-wrapper .our-team-section .member .noe-pic {
+  background-image: url("../assets/members/nv-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .melvin-pic {
+  background-image: url("../assets/members/Melvin-Gordon-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .tanner-pic {
+  background-image: url("../assets/members/tm-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .darius-pic {
+  background-image: url("../assets/members/Darius-Hillary-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .robert-pic {
+  background-image: url("../assets/members/rw-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .dare-pic {
+  background-image: url("../assets/members/do-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .austin-pic {
+  background-image: url("../assets/members/Austin-Traylor-VGC-400.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .kenzel-pic {
+  background-image: url("../assets/members/kd-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .hugs-pic {
+  background-image: url("../assets/members/he-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+.main-wrapper .our-team-section .member .darius-feaster-pic {
+  background-image: url("../assets/members/df-update-web.jpg");
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1300px) {
+  .main-wrapper .our-team-section .member {
+    margin-top: 50px;
+  }
+}
+.main-wrapper .event-section {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-wrapper .event-section .text {
+  font-size: 24px;
+  width: 500px;
+  margin-right: 100px;
+  color: white;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  .main-wrapper .event-section .text {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main-wrapper .event-section .text {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.main-wrapper .event-section .text .register-button {
+  padding-top: 10px;
+}
+.main-wrapper .event-section .text .register-button button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  .main-wrapper .event-section .text .register-button button {
+    margin-bottom: 40px;
+    width: 180px;
+  }
+}
+.main-wrapper .event-section .flyer {
+  width: 500px;
+  height: 500px;
+  background-image: url("../assets/2022-VibezGoCrazy-Design-v4-Sponsors_500x500.jpg");
+}
+.main-wrapper .motto-section {
+  background-color: #FFFFF0;
+}
+.main-wrapper .motto-section .motto-header {
+  text-align: center;
+  color: black;
+  padding-top: 30px;
+  font-size: 60px;
+}
+.main-wrapper .motto-section .motto-text {
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+.main-wrapper .motto-section .vg-black-small {
+  background-image: url("../assets/VGC_BLACK_small.png");
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+.main-wrapper .team-photo-section {
+  height: 700px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.main-wrapper .team-photo-section .photo {
+  background-image: url("../assets/group-photo.png");
+}
+.main-wrapper .footer {
+  height: 200px;
+  background-color: #fffff0;
+}
 
+.main-wrapper .footer .footer-contact {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
 
+.main-wrapper .footer .footer-wrapper {
+  color: #333333;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.main-wrapper .footer .footer-wrapper .social-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: -16px;
+  margin-left: 60px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+.main-wrapper .footer .footer-wrapper .social-wrapper .fa-instagram {
+  font-size: 40px;
+  color: #333333;
+}
+.main-wrapper .footer .footer-wrapper .social-wrapper .fa-twitter {
+  font-size: 40px;
+  color: #333333;
+  padding-left: 16px;
+}
+.main-wrapper .footer .footer-wrapper .vibez-text {
+  font-size: 24px;
+  margin-top: -6px;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+}
 
+/*# sourceMappingURL=style.css.map */
