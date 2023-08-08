@@ -448,14 +448,8 @@ h1 {
   margin-left: 20px;
 }
 
-.main-wrapper .tourney-section {
-  background-color: #f0fff1;
-  background-image: url(../assets/tournament.jpg);
-  height: 750px;
-  width: 750px;
-  margin: auto;
-  margin-top: 45px;
-  margin-bottom: 45px;
+.main-wrapper .button {
+  margin-left: 44%;
 }
 
 /*# sourceMappingURL=style.css.map */
